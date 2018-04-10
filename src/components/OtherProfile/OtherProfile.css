@@ -1,0 +1,36 @@
+
+.OtherProfile {
+}
+
+
+.OtherProfile .ProfilePicture {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background: no-repeat center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.OtherProfile .ProfilePicture::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #ddd;
+}
+
+.OtherProfile::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.OtherProfile .ProfileUsernamePlaceholder {
+    width: 100px;
+    height: 1em;
+    background: #ddd;
+}

@@ -1,0 +1,13 @@
+
+user
+name, max,min
+email, 200,
+fname, 200,
+mname, 200,
+lname, 200,
+username, 200, 3
+password, 200,6
+--- 
+
+post 
+

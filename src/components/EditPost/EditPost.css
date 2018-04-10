@@ -1,0 +1,73 @@
+
+.EditPost {
+    
+}
+
+.EditPost .ImagePreview {
+    float: left;
+    position: relative;
+}
+
+.EditPost .image {
+    width: calc(100% - 25px);
+}
+
+.EditPost .ImagePreview img {
+    max-width: 100%;
+    min-width: 100px;
+}
+
+.EditPost .ImagePreview::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.EditPost .image::after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+.EditPost .rmImage {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -25px;
+    top: 0;
+    background: rgba(255,255,255,.2);
+    border-radius: 50%;
+    color: #623753;
+    transition: all .4s ease;
+}
+
+.EditPost .rmImage i {
+    font-size: 22px;
+    padding: 2px;
+}
+
+.EditPost .imageInput {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.EditPost .imageInput input[type="file"] {
+    font-size: 100px;
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    opacity: 0;
+    filter: alpha(opacity=1);
+    padding: 0;
+    margin: 0;
+}
+
+.EditPost .imageInput button {
+    position: relative;
+}
+
+.EditPost .rmImage:hover {
+    color: #946985;
+    transform: scale(1.5);
+}

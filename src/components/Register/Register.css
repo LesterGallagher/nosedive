@@ -1,0 +1,90 @@
+
+.Register {
+
+}
+.Register .usernameCopy {
+    width: 20px;
+    height: 1em;
+    padding: .3em 0;
+    margin: .25em 0;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Register input.inputUsername {
+    width: calc(100% - 21px);
+    float: left;
+}
+
+.Register .ImagePreview .AvatarImage {
+    background: #eee no-repeat center center;
+    background-size: cover;
+    border: 1px solid #aaa;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.Register .ImagePreview {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 10px 0;
+}
+
+.Register .ImagePreview::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.Register .image::after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+.Register .rmImage {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -25px;
+    top: 0;
+    background: rgba(255,255,255,.2);
+    border-radius: 50%;
+    color: #623753;
+    transition: all .4s ease;
+}
+
+.Register .rmImage i {
+  font-size: 22px;
+  padding: 2px;
+}
+
+.Register .imageInput {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.Register .imageInput input[type="file"] {
+    font-size: 100px;
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    opacity: 0;
+    filter: alpha(opacity=1);
+    padding: 0;
+    margin: 0;
+}
+
+.Register .imageInput button {
+    position: relative;
+}
+
+.Register .rmImage:hover {
+    color: #946985;
+    transform: scale(1.5);
+}

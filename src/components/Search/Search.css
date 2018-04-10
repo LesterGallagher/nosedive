@@ -1,0 +1,65 @@
+
+.Search .buttonSearch .loadingIcon {
+    display: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid #946985;
+    position: absolute;
+    right: -17px;
+    top: 2px;
+    margin: 0;
+    border-top-color: transparent;
+    animation: rotate 1s ease-out 0s infinite forwards normal;
+}
+
+.Search .buttonSearch.loading .loadingIcon {
+    display: block;
+}
+
+.Search .buttonSearch.loading .icon.search {
+    display: none;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.Search .SearchInputGroup {
+    margin-top: 10px;
+    position: relative;
+}
+
+.Search .SearchInputGroup .loadingIcon.loading {
+    display: block;
+}
+
+.Search .SearchInputGroup input {
+    width: 100%;
+    padding: 0.3em .3em;
+    border-color: #946985;
+    border-radius: 3px;
+    background: none;
+    box-shadow: none;
+}
+
+.Search .SearchInputGroup button {
+    appearance: none;
+    border: none;
+    box-shadow: none;
+    background: none;
+    border-radius: 0;
+    color: #946985;
+
+    padding: 0;
+    transform: scale(1.1);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;  
+}
+
+.Search .SearchInputGroup button i.search {
+  font-size: 20px;
+}

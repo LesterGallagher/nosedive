@@ -1,0 +1,71 @@
+
+.FeedRatings {
+    
+}
+
+.FeedRatings .AvatarPicture {
+  background: #eee no-repeat center center;
+  background-size: cover;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 1px solid #aaa;
+  float: left;
+}
+
+
+.FeedRatings .FeedItem {
+  padding: 10px 0;
+  position: relative;
+}
+
+.FeedRatings .FeedItem::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.FeedRatings .FeedItem p {
+  margin: 0;
+}
+
+.FeedRatings .FeedItem .Stars {
+  padding: 0;
+  width: 120px;
+  display: inline-block;
+}
+
+.FeedRatings .FeedItem .Stars .MouseBeforeStar {
+  display: none;
+}
+
+.FeedRatings .FeedItem .Stars .MouseAfterStar {
+  display: none;
+}
+
+.FeedRatings .FeedItem .Date {
+  margin-top: -4px;
+}
+
+.FeedRatings .FeedItem .Helpers {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.FeedRatings .FeedItem::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  bottom: -5px;
+  display: block;
+  border-bottom: 1px solid #946985;
+  opacity: .7;
+}
+
+
+.FeedRatings .FeedItem:last-of-type::after {
+  display: none;
+}
+
+

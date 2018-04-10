@@ -1,0 +1,33 @@
+
+
+.Authenticate .authOrWrap {
+
+}
+
+.Authenticate .authOr {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.Authenticate .authOr::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+    vertical-align: middle;
+    background: #946985;
+    margin-right: 5px;
+}
+
+.authOrWrap .authOr::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+    background: #946985;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+

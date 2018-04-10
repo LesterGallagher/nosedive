@@ -1,0 +1,53 @@
+
+.UserPanel .ProfilePicture {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background: no-repeat center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+}
+
+.UserPanel .ProfilePicture::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #ddd;
+}
+
+.UserPanel::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.UserInvite .loadingIcon {
+  content: "";
+  display: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #946985;
+  position: absolute;
+  right: -17px;
+  top: 2px;
+  margin: 0;
+  border-top-color: transparent;
+  animation: rotate 1s ease-out 0s infinite forwards normal;
+}
+
+.UserInvite.loading .loadingIcon {
+  display: block;
+}
+
+.UserInvite.loading .invite-icon {
+  display: none;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

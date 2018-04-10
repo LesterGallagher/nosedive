@@ -1,0 +1,34 @@
+
+.Posts {
+    
+}
+
+.Posts .PostItem::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+.PostItem .UserPanel .ProfileUsername {
+  display: none;
+}
+
+
+.PostItem .description, .PostItem .content {
+  display: none;
+}
+
+@media screen and (min-width: 950px) {
+  .Posts .PostItem .PostImage {
+    float: left;
+    margin-right: 10px;
+  }
+  .PostItem .description {
+    display: inline-block;
+  }
+  .PostItem .content {
+    display: block;
+  }
+}
+

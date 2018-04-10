@@ -1,0 +1,8 @@
+
+.PostPage {
+    padding: 20px;
+}
+
+.PostPage .icon.open {
+  display: none;
+}

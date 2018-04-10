@@ -1,0 +1,77 @@
+
+.EditUser {
+    
+}
+
+
+.EditUser .AvatarPreview .AvatarImage {
+    background: #eee no-repeat center center;
+    background-size: cover;
+    border: 1px solid #aaa;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.EditUser .AvatarPreview {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 10px 0;
+}
+
+.EditUser .AvatarPreview::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.EditUser .avatar::after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+.EditUser .rmImage {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -25px;
+    top: 0;
+    background: rgba(255,255,255,.2);
+    border-radius: 50%;
+    color: #623753;
+    transition: all .4s ease;
+}
+
+.EditUser .rmImage i {
+  font-size: 22px;
+  padding: 2px;
+}
+
+.EditUser .imageInput {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.EditUser .imageInput input[type="file"] {
+    font-size: 100px;
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    opacity: 0;
+    filter: alpha(opacity=1);
+    padding: 0;
+    margin: 0;
+}
+
+.EditUser .imageInput button {
+    position: relative;
+}
+
+.EditUser .rmImage:hover {
+    color: #946985;
+    transform: scale(1.5);
+}
