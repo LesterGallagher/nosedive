@@ -3,7 +3,7 @@ import './FriendRequests.css';
 import { Link } from 'react-router-dom';
 import UserStore from '../../stores/UserStore';
 
-import conf from '../../conf.json';
+import conf from '../../conf.js';
 
 class FriendRequests extends Component {
   constructor(props) {

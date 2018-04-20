@@ -1,7 +1,7 @@
 import UserStore from "./stores/UserStore";
 import Axios from "axios";
 
-import conf from './conf.json';
+import conf from './conf.js';
 
 export const audio = {
     star1: new Audio('assets/media/star1.mp3'),

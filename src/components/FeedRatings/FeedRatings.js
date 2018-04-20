@@ -5,7 +5,7 @@ import './FeedRatings.css';
 import UserStore from '../../stores/UserStore';
 import Stars from '../Stars/Stars';
 import { strcap } from '../../util';
-import conf from '../../conf.json';
+import conf from '../../conf.js';
 
 class FeedRatings extends Component {
   constructor(props) {

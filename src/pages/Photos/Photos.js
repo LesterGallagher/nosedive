@@ -4,7 +4,7 @@ import './Photos.css';
 import UserStore from '../../stores/UserStore';
 import PostsStore from '../../stores/PostsStore';
 
-import conf from '../../conf.json';
+import conf from '../../conf.js';
 
 class Photos extends Component {
   constructor(props) {

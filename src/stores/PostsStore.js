@@ -1,6 +1,6 @@
 import { EventEmitter } from 'events';
 import * as axios from 'axios';
-import * as conf from '../conf.json'
+import * as conf from '../conf.js'
 import { encodeIntoQuery, toFormData } from '../util';
 
 class PostsStore extends EventEmitter {

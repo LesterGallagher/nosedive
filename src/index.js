@@ -10,3 +10,6 @@ import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
+
+
+const apiUrl = process.env.NODE_ENV === 'production' ? 'http://localhost:1234' : process.env.REACT_APP_DEV_API_URL;

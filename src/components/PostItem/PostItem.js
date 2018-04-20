@@ -5,7 +5,7 @@ import './PostItem.css';
 import UserStore from '../../stores/UserStore';
 import { strcap } from '../../util';
 import UserPanel from '../UserPanel/UserPanel';
-import conf from '../../conf.json';
+import conf from '../../conf.js';
 
 class PostItem extends Component {
   constructor(props) {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './EditUser.css';
-import conf from '../../conf.json';
+import conf from '../../conf.js';
 
 const validFileType = file => {
   return /image\/(jpg|jpeg|png|gif|bmp)$/i.test(file.type);

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Feed.css';
 import UserStore from '../../stores/UserStore';
 
-import conf from '../../conf.json';
+import conf from '../../conf.js';
 import { strcap } from '../../util';
 
 class Feed extends Component {

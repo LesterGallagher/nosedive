@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './OtherProfile.css';
-import conf from '../../conf.json';
+import conf from '../../conf.js';
 import UserStore from '../../stores/UserStore';
 import { deltaTime } from '../../util';
 import Stars from '../Stars/Stars';

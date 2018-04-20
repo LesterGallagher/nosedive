@@ -3,7 +3,7 @@ import './Register.css';
 import UserStore from '../../stores/UserStore';
 import ReCAPTCHA from 'react-google-recaptcha';
 
-import conf from '../../conf.json';
+import conf from '../../conf.js';
 
 const validFileType = file => {
   return /image\/(jpg|jpeg|png|gif|bmp)$/i.test(file.type);

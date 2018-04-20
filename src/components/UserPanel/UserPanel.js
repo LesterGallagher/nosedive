@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './UserPanel.css';
 import UserStore from '../../stores/UserStore';
 
-import conf from '../../conf.json';
+import conf from '../../conf.js';
 
 class UserPanel extends Component {
   constructor(props) {
